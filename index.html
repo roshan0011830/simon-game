@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee&family=Bungee+Inline&family=Bungee+Spice&family=Monoton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+    <div class="game-container">
+        <div class="text-content">
+            <h1>Simon Game</h1>
+            <p>Press Start To play</p>
+        </div>
+        <div class="outercircle-container">
+            <div class="outercircle">
+                <div class="red colorPad"></div>
+                <div class="yellow colorPad"></div>
+                <div class="blue colorPad"></div>
+                <div class="green colorPad"></div>
+
+                <!-- --------inner centercircle-----  -->
+                 <div class="innercircle">
+                    <h2 id="center-text">Simon</h2>
+                    <!-- <button>S</button> -->
+                 </div>
+            </div>
+
+        </div>
+
+        <div class="extra-buttons">
+            <button id="startBtn">Start Game</button>
+
+        </div>
+
+
+    </div>
+    
+    <audio id="lightSound" src="./assets/light_btn.wav"></audio>
+    <audio id="tapSound" src="./assets/tap.wav"></audio>
+    <audio id="levelSound" src="./assets/level.mp3"></audio>
+    <audio id="overSound" src="./assets/game-over.mp3"></audio>
+
+    <script src="./simon.js"></script>
+</body>
+</html>
